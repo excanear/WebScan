@@ -1,0 +1,22 @@
+id: env-file-exposed
+name: .env File Exposed
+severity: high
+description: Detects publicly accessible .env files that may expose API keys, DB credentials, etc.
+tags: [exposure, secrets, credentials]
+
+requests:
+  - method: GET
+    path: /.env
+    matchers:
+      - type: word
+        words:
+          - "APP_KEY"
+          - "DB_PASSWORD"
+          - "SECRET"
+          - "API_KEY"
+          - "DATABASE_URL"
+        part: body
+        condition: or
+      - type: status
+        status: [200]
+    matcher-condition: and

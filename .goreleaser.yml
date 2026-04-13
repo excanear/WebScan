@@ -1,0 +1,26 @@
+project_name: webscan
+
+builds:
+  - id: webscan
+    binary: webscan
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+    flags:
+      - -trimpath
+    env:
+      - CGO_ENABLED=0
+
+archives:
+  - id: default
+    format: tar.gz
+    files:
+      - LICENSE
+      - README.md
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+
+changelog:
+  use: git

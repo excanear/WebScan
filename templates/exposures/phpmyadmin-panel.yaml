@@ -1,0 +1,32 @@
+id: phpmyadmin-panel
+name: phpMyAdmin Panel Detected
+severity: medium
+description: Detects exposed phpMyAdmin login panel.
+reference:
+  - https://www.phpmyadmin.net/
+tags: [panel, database, phpmyadmin, exposure]
+
+requests:
+  - method: GET
+    path: /phpmyadmin/
+    matchers:
+      - type: word
+        words:
+          - "phpMyAdmin"
+          - "pma_username"
+        part: body
+        condition: or
+      - type: status
+        status: [200]
+    matcher-condition: and
+
+  - method: GET
+    path: /pma/
+    matchers:
+      - type: word
+        words:
+          - "phpMyAdmin"
+        part: body
+      - type: status
+        status: [200]
+    matcher-condition: and

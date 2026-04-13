@@ -1,0 +1,32 @@
+id: jenkins-dashboard-exposed
+name: Jenkins Dashboard Exposed
+severity: high
+description: Detects publicly accessible Jenkins CI dashboard without authentication.
+reference:
+  - https://www.jenkins.io/doc/book/security/
+tags: [jenkins, panel, unauthenticated, exposure]
+
+requests:
+  - method: GET
+    path: /
+    matchers:
+      - type: word
+        words:
+          - "Dashboard [Jenkins]"
+          - "jenkins"
+          - "Jenkins ver."
+        part: body
+        condition: or
+      - type: status
+        status: [200]
+    matcher-condition: and
+
+  - method: GET
+    path: /script
+    matchers:
+      - type: word
+        words:
+          - "Groovy Script"
+          - "script console"
+        part: body
+        condition: or

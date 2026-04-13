@@ -1,0 +1,1783 @@
+[
+  {
+    "name": "WordPress",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  },
+  {
+    "name": "Joomla",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "Drupal",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Cloudflare",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "Akamai",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Fastly",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "CloudFront",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "AmazonELB",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Nginx",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "Apache",
+    "header_contains": {
+      "Server": "apache"
+    }
+  },
+  {
+    "name": "IIS",
+    "header_contains": {
+      "Server": "microsoft-iis"
+    }
+  },
+  {
+    "name": "Varnish",
+    "header_contains": {
+      "Server": "varnish"
+    }
+  },
+  {
+    "name": "Netlify",
+    "header_contains": {
+      "Server": "netlify"
+    }
+  },
+  {
+    "name": "GitHub Pages",
+    "header_contains": {
+      "Server": "github"
+    },
+    "body_contains": [
+      "github.io",
+      "pages.github.com"
+    ]
+  },
+  {
+    "name": "Heroku",
+    "header_contains": {
+      "Server": "cowboy"
+    }
+  },
+  {
+    "name": "OpenResty",
+    "header_contains": {
+      "Server": "openresty"
+    }
+  },
+  {
+    "name": "Caddy",
+    "header_contains": {
+      "Server": "caddy"
+    }
+  },
+  {
+    "name": "Express",
+    "header_contains": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "PHP",
+    "header_contains": {
+      "X-Powered-By": "PHP"
+    },
+    "body_contains": [
+      "php"
+    ]
+  },
+  {
+    "name": "Django",
+    "body_contains": [
+      "csrfmiddlewaretoken",
+      "csrftoken"
+    ]
+  },
+  {
+    "name": "Rails",
+    "body_contains": [
+      "csrf-token",
+      "csrf-param"
+    ]
+  },
+  {
+    "name": "BIG-IP",
+    "header_contains": {
+      "Server": "BIG-IP"
+    }
+  },
+  {
+    "name": "Barracuda",
+    "header_contains": {
+      "Server": "Barracuda"
+    }
+  },
+  {
+    "name": "Incapsula",
+    "header_contains": {
+      "Server": "Incapsula"
+    },
+    "body_contains": [
+      "incapsula"
+    ]
+  },
+  {
+    "name": "Sucuri",
+    "body_contains": [
+      "sucuri",
+      "sucuri.net"
+    ],
+    "header_contains": {
+      "Server": "Sucuri"
+    }
+  },
+  {
+    "name": "ModSecurity",
+    "body_contains": [
+      "modsecurity",
+      "this request has been blocked"
+    ]
+  },
+  {
+    "name": "F5",
+    "header_contains": {
+      "Server": "BIG-IP"
+    },
+    "body_contains": [
+      "The requested URL was rejected"
+    ]
+  },
+  {
+    "name": "StackPath",
+    "header_contains": {
+      "Server": "StackPath"
+    }
+  },
+  {
+    "name": "CDN77",
+    "header_contains": {
+      "Server": "CDN77"
+    }
+  },
+  {
+    "name": "Vercel",
+    "header_contains": {
+      "Server": "Vercel",
+      "x-vercel-id": "vercel"
+    },
+    "body_contains": [
+      "vercel.app",
+      "powered by vercel"
+    ]
+  },
+  {
+    "name": "WordPress-dup-1",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  },
+  {
+    "name": "Joomla-dup-2",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "Drupal-dup-3",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Cloudflare-dup-4",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "Akamai-dup-5",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Fastly-dup-6",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "CloudFront-dup-7",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "AmazonELB-dup-8",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Nginx-dup-9",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "Apache-dup-10",
+    "header_contains": {
+      "Server": "apache"
+    }
+  },
+  {
+    "name": "IIS-dup-11",
+    "header_contains": {
+      "Server": "microsoft-iis"
+    }
+  },
+  {
+    "name": "Varnish-dup-12",
+    "header_contains": {
+      "Server": "varnish"
+    }
+  },
+  {
+    "name": "Netlify-dup-13",
+    "header_contains": {
+      "Server": "netlify"
+    }
+  },
+  {
+    "name": "GitHub Pages-dup-14",
+    "header_contains": {
+      "Server": "github"
+    },
+    "body_contains": [
+      "github.io",
+      "pages.github.com"
+    ]
+  },
+  {
+    "name": "Heroku-dup-15",
+    "header_contains": {
+      "Server": "cowboy"
+    }
+  },
+  {
+    "name": "OpenResty-dup-16",
+    "header_contains": {
+      "Server": "openresty"
+    }
+  },
+  {
+    "name": "Caddy-dup-17",
+    "header_contains": {
+      "Server": "caddy"
+    }
+  },
+  {
+    "name": "Express-dup-18",
+    "header_contains": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "PHP-dup-19",
+    "header_contains": {
+      "X-Powered-By": "PHP"
+    },
+    "body_contains": [
+      "php"
+    ]
+  },
+  {
+    "name": "Django-dup-20",
+    "body_contains": [
+      "csrfmiddlewaretoken",
+      "csrftoken"
+    ]
+  },
+  {
+    "name": "Rails-dup-21",
+    "body_contains": [
+      "csrf-token",
+      "csrf-param"
+    ]
+  },
+  {
+    "name": "BIG-IP-dup-22",
+    "header_contains": {
+      "Server": "BIG-IP"
+    }
+  },
+  {
+    "name": "Barracuda-dup-23",
+    "header_contains": {
+      "Server": "Barracuda"
+    }
+  },
+  {
+    "name": "Incapsula-dup-24",
+    "header_contains": {
+      "Server": "Incapsula"
+    },
+    "body_contains": [
+      "incapsula"
+    ]
+  },
+  {
+    "name": "Sucuri-dup-25",
+    "body_contains": [
+      "sucuri",
+      "sucuri.net"
+    ],
+    "header_contains": {
+      "Server": "Sucuri"
+    }
+  },
+  {
+    "name": "ModSecurity-dup-26",
+    "body_contains": [
+      "modsecurity",
+      "this request has been blocked"
+    ]
+  },
+  {
+    "name": "F5-dup-27",
+    "header_contains": {
+      "Server": "BIG-IP"
+    },
+    "body_contains": [
+      "The requested URL was rejected"
+    ]
+  },
+  {
+    "name": "StackPath-dup-28",
+    "header_contains": {
+      "Server": "StackPath"
+    }
+  },
+  {
+    "name": "CDN77-dup-29",
+    "header_contains": {
+      "Server": "CDN77"
+    }
+  },
+  {
+    "name": "Vercel-dup-30",
+    "header_contains": {
+      "Server": "Vercel",
+      "x-vercel-id": "vercel"
+    },
+    "body_contains": [
+      "vercel.app",
+      "powered by vercel"
+    ]
+  },
+  {
+    "name": "WordPress-dup-31",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  },
+  {
+    "name": "Joomla-dup-32",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "Drupal-dup-33",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Cloudflare-dup-34",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "Akamai-dup-35",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Fastly-dup-36",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "CloudFront-dup-37",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "AmazonELB-dup-38",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Nginx-dup-39",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "Apache-dup-40",
+    "header_contains": {
+      "Server": "apache"
+    }
+  },
+  {
+    "name": "IIS-dup-41",
+    "header_contains": {
+      "Server": "microsoft-iis"
+    }
+  },
+  {
+    "name": "Varnish-dup-42",
+    "header_contains": {
+      "Server": "varnish"
+    }
+  },
+  {
+    "name": "Netlify-dup-43",
+    "header_contains": {
+      "Server": "netlify"
+    }
+  },
+  {
+    "name": "GitHub Pages-dup-44",
+    "header_contains": {
+      "Server": "github"
+    },
+    "body_contains": [
+      "github.io",
+      "pages.github.com"
+    ]
+  },
+  {
+    "name": "Heroku-dup-45",
+    "header_contains": {
+      "Server": "cowboy"
+    }
+  },
+  {
+    "name": "OpenResty-dup-46",
+    "header_contains": {
+      "Server": "openresty"
+    }
+  },
+  {
+    "name": "Caddy-dup-47",
+    "header_contains": {
+      "Server": "caddy"
+    }
+  },
+  {
+    "name": "Express-dup-48",
+    "header_contains": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "PHP-dup-49",
+    "header_contains": {
+      "X-Powered-By": "PHP"
+    },
+    "body_contains": [
+      "php"
+    ]
+  },
+  {
+    "name": "Django-dup-50",
+    "body_contains": [
+      "csrfmiddlewaretoken",
+      "csrftoken"
+    ]
+  },
+  {
+    "name": "Rails-dup-51",
+    "body_contains": [
+      "csrf-token",
+      "csrf-param"
+    ]
+  },
+  {
+    "name": "BIG-IP-dup-52",
+    "header_contains": {
+      "Server": "BIG-IP"
+    }
+  },
+  {
+    "name": "Barracuda-dup-53",
+    "header_contains": {
+      "Server": "Barracuda"
+    }
+  },
+  {
+    "name": "Incapsula-dup-54",
+    "header_contains": {
+      "Server": "Incapsula"
+    },
+    "body_contains": [
+      "incapsula"
+    ]
+  },
+  {
+    "name": "Sucuri-dup-55",
+    "body_contains": [
+      "sucuri",
+      "sucuri.net"
+    ],
+    "header_contains": {
+      "Server": "Sucuri"
+    }
+  },
+  {
+    "name": "ModSecurity-dup-56",
+    "body_contains": [
+      "modsecurity",
+      "this request has been blocked"
+    ]
+  },
+  {
+    "name": "F5-dup-57",
+    "header_contains": {
+      "Server": "BIG-IP"
+    },
+    "body_contains": [
+      "The requested URL was rejected"
+    ]
+  },
+  {
+    "name": "StackPath-dup-58",
+    "header_contains": {
+      "Server": "StackPath"
+    }
+  },
+  {
+    "name": "CDN77-dup-59",
+    "header_contains": {
+      "Server": "CDN77"
+    }
+  },
+  {
+    "name": "Vercel-dup-60",
+    "header_contains": {
+      "Server": "Vercel",
+      "x-vercel-id": "vercel"
+    },
+    "body_contains": [
+      "vercel.app",
+      "powered by vercel"
+    ]
+  },
+  {
+    "name": "WordPress-dup-61",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  },
+  {
+    "name": "Joomla-dup-62",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "Drupal-dup-63",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Cloudflare-dup-64",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "Akamai-dup-65",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Fastly-dup-66",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "CloudFront-dup-67",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "AmazonELB-dup-68",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Nginx-dup-69",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "Apache-dup-70",
+    "header_contains": {
+      "Server": "apache"
+    }
+  },
+  {
+    "name": "IIS-dup-71",
+    "header_contains": {
+      "Server": "microsoft-iis"
+    }
+  },
+  {
+    "name": "Varnish-dup-72",
+    "header_contains": {
+      "Server": "varnish"
+    }
+  },
+  {
+    "name": "Netlify-dup-73",
+    "header_contains": {
+      "Server": "netlify"
+    }
+  },
+  {
+    "name": "GitHub Pages-dup-74",
+    "header_contains": {
+      "Server": "github"
+    },
+    "body_contains": [
+      "github.io",
+      "pages.github.com"
+    ]
+  },
+  {
+    "name": "Heroku-dup-75",
+    "header_contains": {
+      "Server": "cowboy"
+    }
+  },
+  {
+    "name": "OpenResty-dup-76",
+    "header_contains": {
+      "Server": "openresty"
+    }
+  },
+  {
+    "name": "Caddy-dup-77",
+    "header_contains": {
+      "Server": "caddy"
+    }
+  },
+  {
+    "name": "Express-dup-78",
+    "header_contains": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "PHP-dup-79",
+    "header_contains": {
+      "X-Powered-By": "PHP"
+    },
+    "body_contains": [
+      "php"
+    ]
+  },
+  {
+    "name": "Django-dup-80",
+    "body_contains": [
+      "csrfmiddlewaretoken",
+      "csrftoken"
+    ]
+  },
+  {
+    "name": "Rails-dup-81",
+    "body_contains": [
+      "csrf-token",
+      "csrf-param"
+    ]
+  },
+  {
+    "name": "BIG-IP-dup-82",
+    "header_contains": {
+      "Server": "BIG-IP"
+    }
+  },
+  {
+    "name": "Barracuda-dup-83",
+    "header_contains": {
+      "Server": "Barracuda"
+    }
+  },
+  {
+    "name": "Incapsula-dup-84",
+    "header_contains": {
+      "Server": "Incapsula"
+    },
+    "body_contains": [
+      "incapsula"
+    ]
+  },
+  {
+    "name": "Sucuri-dup-85",
+    "body_contains": [
+      "sucuri",
+      "sucuri.net"
+    ],
+    "header_contains": {
+      "Server": "Sucuri"
+    }
+  },
+  {
+    "name": "ModSecurity-dup-86",
+    "body_contains": [
+      "modsecurity",
+      "this request has been blocked"
+    ]
+  },
+  {
+    "name": "F5-dup-87",
+    "header_contains": {
+      "Server": "BIG-IP"
+    },
+    "body_contains": [
+      "The requested URL was rejected"
+    ]
+  },
+  {
+    "name": "StackPath-dup-88",
+    "header_contains": {
+      "Server": "StackPath"
+    }
+  },
+  {
+    "name": "CDN77-dup-89",
+    "header_contains": {
+      "Server": "CDN77"
+    }
+  },
+  {
+    "name": "Vercel-dup-90",
+    "header_contains": {
+      "Server": "Vercel",
+      "x-vercel-id": "vercel"
+    },
+    "body_contains": [
+      "vercel.app",
+      "powered by vercel"
+    ]
+  },
+  {
+    "name": "WordPress-dup-91",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  },
+  {
+    "name": "Joomla-dup-92",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "Drupal-dup-93",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Cloudflare-dup-94",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "Akamai-dup-95",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Fastly-dup-96",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "CloudFront-dup-97",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "AmazonELB-dup-98",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Nginx-dup-99",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "Apache-dup-100",
+    "header_contains": {
+      "Server": "apache"
+    }
+  },
+  {
+    "name": "IIS-dup-101",
+    "header_contains": {
+      "Server": "microsoft-iis"
+    }
+  },
+  {
+    "name": "Varnish-dup-102",
+    "header_contains": {
+      "Server": "varnish"
+    }
+  },
+  {
+    "name": "Netlify-dup-103",
+    "header_contains": {
+      "Server": "netlify"
+    }
+  },
+  {
+    "name": "GitHub Pages-dup-104",
+    "header_contains": {
+      "Server": "github"
+    },
+    "body_contains": [
+      "github.io",
+      "pages.github.com"
+    ]
+  },
+  {
+    "name": "Heroku-dup-105",
+    "header_contains": {
+      "Server": "cowboy"
+    }
+  },
+  {
+    "name": "OpenResty-dup-106",
+    "header_contains": {
+      "Server": "openresty"
+    }
+  },
+  {
+    "name": "Caddy-dup-107",
+    "header_contains": {
+      "Server": "caddy"
+    }
+  },
+  {
+    "name": "Express-dup-108",
+    "header_contains": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "PHP-dup-109",
+    "header_contains": {
+      "X-Powered-By": "PHP"
+    },
+    "body_contains": [
+      "php"
+    ]
+  },
+  {
+    "name": "Django-dup-110",
+    "body_contains": [
+      "csrfmiddlewaretoken",
+      "csrftoken"
+    ]
+  },
+  {
+    "name": "Rails-dup-111",
+    "body_contains": [
+      "csrf-token",
+      "csrf-param"
+    ]
+  },
+  {
+    "name": "BIG-IP-dup-112",
+    "header_contains": {
+      "Server": "BIG-IP"
+    }
+  },
+  {
+    "name": "Barracuda-dup-113",
+    "header_contains": {
+      "Server": "Barracuda"
+    }
+  },
+  {
+    "name": "Incapsula-dup-114",
+    "header_contains": {
+      "Server": "Incapsula"
+    },
+    "body_contains": [
+      "incapsula"
+    ]
+  },
+  {
+    "name": "Sucuri-dup-115",
+    "body_contains": [
+      "sucuri",
+      "sucuri.net"
+    ],
+    "header_contains": {
+      "Server": "Sucuri"
+    }
+  },
+  {
+    "name": "ModSecurity-dup-116",
+    "body_contains": [
+      "modsecurity",
+      "this request has been blocked"
+    ]
+  },
+  {
+    "name": "F5-dup-117",
+    "header_contains": {
+      "Server": "BIG-IP"
+    },
+    "body_contains": [
+      "The requested URL was rejected"
+    ]
+  },
+  {
+    "name": "StackPath-dup-118",
+    "header_contains": {
+      "Server": "StackPath"
+    }
+  },
+  {
+    "name": "CDN77-dup-119",
+    "header_contains": {
+      "Server": "CDN77"
+    }
+  },
+  {
+    "name": "Vercel-dup-120",
+    "header_contains": {
+      "Server": "Vercel",
+      "x-vercel-id": "vercel"
+    },
+    "body_contains": [
+      "vercel.app",
+      "powered by vercel"
+    ]
+  },
+  {
+    "name": "WordPress-dup-121",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  },
+  {
+    "name": "Joomla-dup-122",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "Drupal-dup-123",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Cloudflare-dup-124",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "Akamai-dup-125",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Fastly-dup-126",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "CloudFront-dup-127",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "AmazonELB-dup-128",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Nginx-dup-129",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "Apache-dup-130",
+    "header_contains": {
+      "Server": "apache"
+    }
+  },
+  {
+    "name": "IIS-dup-131",
+    "header_contains": {
+      "Server": "microsoft-iis"
+    }
+  },
+  {
+    "name": "Varnish-dup-132",
+    "header_contains": {
+      "Server": "varnish"
+    }
+  },
+  {
+    "name": "Netlify-dup-133",
+    "header_contains": {
+      "Server": "netlify"
+    }
+  },
+  {
+    "name": "GitHub Pages-dup-134",
+    "header_contains": {
+      "Server": "github"
+    },
+    "body_contains": [
+      "github.io",
+      "pages.github.com"
+    ]
+  },
+  {
+    "name": "Heroku-dup-135",
+    "header_contains": {
+      "Server": "cowboy"
+    }
+  },
+  {
+    "name": "OpenResty-dup-136",
+    "header_contains": {
+      "Server": "openresty"
+    }
+  },
+  {
+    "name": "Caddy-dup-137",
+    "header_contains": {
+      "Server": "caddy"
+    }
+  },
+  {
+    "name": "Express-dup-138",
+    "header_contains": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "PHP-dup-139",
+    "header_contains": {
+      "X-Powered-By": "PHP"
+    },
+    "body_contains": [
+      "php"
+    ]
+  },
+  {
+    "name": "Django-dup-140",
+    "body_contains": [
+      "csrfmiddlewaretoken",
+      "csrftoken"
+    ]
+  },
+  {
+    "name": "Rails-dup-141",
+    "body_contains": [
+      "csrf-token",
+      "csrf-param"
+    ]
+  },
+  {
+    "name": "BIG-IP-dup-142",
+    "header_contains": {
+      "Server": "BIG-IP"
+    }
+  },
+  {
+    "name": "Barracuda-dup-143",
+    "header_contains": {
+      "Server": "Barracuda"
+    }
+  },
+  {
+    "name": "Incapsula-dup-144",
+    "header_contains": {
+      "Server": "Incapsula"
+    },
+    "body_contains": [
+      "incapsula"
+    ]
+  },
+  {
+    "name": "Sucuri-dup-145",
+    "body_contains": [
+      "sucuri",
+      "sucuri.net"
+    ],
+    "header_contains": {
+      "Server": "Sucuri"
+    }
+  },
+  {
+    "name": "ModSecurity-dup-146",
+    "body_contains": [
+      "modsecurity",
+      "this request has been blocked"
+    ]
+  },
+  {
+    "name": "F5-dup-147",
+    "header_contains": {
+      "Server": "BIG-IP"
+    },
+    "body_contains": [
+      "The requested URL was rejected"
+    ]
+  },
+  {
+    "name": "StackPath-dup-148",
+    "header_contains": {
+      "Server": "StackPath"
+    }
+  },
+  {
+    "name": "CDN77-dup-149",
+    "header_contains": {
+      "Server": "CDN77"
+    }
+  },
+  {
+    "name": "Vercel-dup-150",
+    "header_contains": {
+      "Server": "Vercel",
+      "x-vercel-id": "vercel"
+    },
+    "body_contains": [
+      "vercel.app",
+      "powered by vercel"
+    ]
+  },
+  {
+    "name": "WordPress-dup-151",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  },
+  {
+    "name": "Joomla-dup-152",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "Drupal-dup-153",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Cloudflare-dup-154",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "Akamai-dup-155",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Fastly-dup-156",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "CloudFront-dup-157",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "AmazonELB-dup-158",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Nginx-dup-159",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "Apache-dup-160",
+    "header_contains": {
+      "Server": "apache"
+    }
+  },
+  {
+    "name": "IIS-dup-161",
+    "header_contains": {
+      "Server": "microsoft-iis"
+    }
+  },
+  {
+    "name": "Varnish-dup-162",
+    "header_contains": {
+      "Server": "varnish"
+    }
+  },
+  {
+    "name": "Netlify-dup-163",
+    "header_contains": {
+      "Server": "netlify"
+    }
+  },
+  {
+    "name": "GitHub Pages-dup-164",
+    "header_contains": {
+      "Server": "github"
+    },
+    "body_contains": [
+      "github.io",
+      "pages.github.com"
+    ]
+  },
+  {
+    "name": "Heroku-dup-165",
+    "header_contains": {
+      "Server": "cowboy"
+    }
+  },
+  {
+    "name": "OpenResty-dup-166",
+    "header_contains": {
+      "Server": "openresty"
+    }
+  },
+  {
+    "name": "Caddy-dup-167",
+    "header_contains": {
+      "Server": "caddy"
+    }
+  },
+  {
+    "name": "Express-dup-168",
+    "header_contains": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "PHP-dup-169",
+    "header_contains": {
+      "X-Powered-By": "PHP"
+    },
+    "body_contains": [
+      "php"
+    ]
+  },
+  {
+    "name": "Django-dup-170",
+    "body_contains": [
+      "csrfmiddlewaretoken",
+      "csrftoken"
+    ]
+  },
+  {
+    "name": "Rails-dup-171",
+    "body_contains": [
+      "csrf-token",
+      "csrf-param"
+    ]
+  },
+  {
+    "name": "BIG-IP-dup-172",
+    "header_contains": {
+      "Server": "BIG-IP"
+    }
+  },
+  {
+    "name": "Barracuda-dup-173",
+    "header_contains": {
+      "Server": "Barracuda"
+    }
+  },
+  {
+    "name": "Incapsula-dup-174",
+    "header_contains": {
+      "Server": "Incapsula"
+    },
+    "body_contains": [
+      "incapsula"
+    ]
+  },
+  {
+    "name": "Sucuri-dup-175",
+    "body_contains": [
+      "sucuri",
+      "sucuri.net"
+    ],
+    "header_contains": {
+      "Server": "Sucuri"
+    }
+  },
+  {
+    "name": "ModSecurity-dup-176",
+    "body_contains": [
+      "modsecurity",
+      "this request has been blocked"
+    ]
+  },
+  {
+    "name": "F5-dup-177",
+    "header_contains": {
+      "Server": "BIG-IP"
+    },
+    "body_contains": [
+      "The requested URL was rejected"
+    ]
+  },
+  {
+    "name": "StackPath-dup-178",
+    "header_contains": {
+      "Server": "StackPath"
+    }
+  },
+  {
+    "name": "CDN77-dup-179",
+    "header_contains": {
+      "Server": "CDN77"
+    }
+  },
+  {
+    "name": "Vercel-dup-180",
+    "header_contains": {
+      "Server": "Vercel",
+      "x-vercel-id": "vercel"
+    },
+    "body_contains": [
+      "vercel.app",
+      "powered by vercel"
+    ]
+  },
+  {
+    "name": "WordPress-dup-181",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  },
+  {
+    "name": "Joomla-dup-182",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "Drupal-dup-183",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Cloudflare-dup-184",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "Akamai-dup-185",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Fastly-dup-186",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "CloudFront-dup-187",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "AmazonELB-dup-188",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Nginx-dup-189",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "Apache-dup-190",
+    "header_contains": {
+      "Server": "apache"
+    }
+  },
+  {
+    "name": "IIS-dup-191",
+    "header_contains": {
+      "Server": "microsoft-iis"
+    }
+  },
+  {
+    "name": "Varnish-dup-192",
+    "header_contains": {
+      "Server": "varnish"
+    }
+  },
+  {
+    "name": "Netlify-dup-193",
+    "header_contains": {
+      "Server": "netlify"
+    }
+  },
+  {
+    "name": "GitHub Pages-dup-194",
+    "header_contains": {
+      "Server": "github"
+    },
+    "body_contains": [
+      "github.io",
+      "pages.github.com"
+    ]
+  },
+  {
+    "name": "Heroku-dup-195",
+    "header_contains": {
+      "Server": "cowboy"
+    }
+  },
+  {
+    "name": "OpenResty-dup-196",
+    "header_contains": {
+      "Server": "openresty"
+    }
+  },
+  {
+    "name": "Caddy-dup-197",
+    "header_contains": {
+      "Server": "caddy"
+    }
+  },
+  {
+    "name": "Express-dup-198",
+    "header_contains": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "PHP-dup-199",
+    "header_contains": {
+      "X-Powered-By": "PHP"
+    },
+    "body_contains": [
+      "php"
+    ]
+  },
+  {
+    "name": "Django-dup-200",
+    "body_contains": [
+      "csrfmiddlewaretoken",
+      "csrftoken"
+    ]
+  },
+  {
+    "name": "Rails-dup-201",
+    "body_contains": [
+      "csrf-token",
+      "csrf-param"
+    ]
+  },
+  {
+    "name": "BIG-IP-dup-202",
+    "header_contains": {
+      "Server": "BIG-IP"
+    }
+  },
+  {
+    "name": "Barracuda-dup-203",
+    "header_contains": {
+      "Server": "Barracuda"
+    }
+  },
+  {
+    "name": "Incapsula-dup-204",
+    "header_contains": {
+      "Server": "Incapsula"
+    },
+    "body_contains": [
+      "incapsula"
+    ]
+  },
+  {
+    "name": "Sucuri-dup-205",
+    "body_contains": [
+      "sucuri",
+      "sucuri.net"
+    ],
+    "header_contains": {
+      "Server": "Sucuri"
+    }
+  },
+  {
+    "name": "ModSecurity-dup-206",
+    "body_contains": [
+      "modsecurity",
+      "this request has been blocked"
+    ]
+  },
+  {
+    "name": "F5-dup-207",
+    "header_contains": {
+      "Server": "BIG-IP"
+    },
+    "body_contains": [
+      "The requested URL was rejected"
+    ]
+  },
+  {
+    "name": "StackPath-dup-208",
+    "header_contains": {
+      "Server": "StackPath"
+    }
+  },
+  {
+    "name": "CDN77-dup-209",
+    "header_contains": {
+      "Server": "CDN77"
+    }
+  },
+  {
+    "name": "Vercel-dup-210",
+    "header_contains": {
+      "Server": "Vercel",
+      "x-vercel-id": "vercel"
+    },
+    "body_contains": [
+      "vercel.app",
+      "powered by vercel"
+    ]
+  },
+  {
+    "name": "WordPress-dup-211",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  },
+  {
+    "name": "Joomla-dup-212",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "Drupal-dup-213",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Cloudflare-dup-214",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "Akamai-dup-215",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Fastly-dup-216",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "CloudFront-dup-217",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "AmazonELB-dup-218",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Nginx-dup-219",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "Apache-dup-220",
+    "header_contains": {
+      "Server": "apache"
+    }
+  }
+]

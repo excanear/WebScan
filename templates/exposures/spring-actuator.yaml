@@ -1,0 +1,37 @@
+id: spring-actuator-exposed
+name: Spring Boot Actuator Exposed
+severity: medium
+description: |
+  Detects exposed Spring Boot Actuator endpoints which may leak environment
+  variables, heap dumps, beans, health info and other sensitive data.
+reference:
+  - https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html
+tags: [spring, exposure, misconfiguration, actuator]
+
+requests:
+  - method: GET
+    path: /actuator
+    matchers:
+      - type: word
+        words:
+          - '"_links"'
+        part: body
+      - type: status
+        status: [200]
+    matcher-condition: and
+
+  - method: GET
+    path: /actuator/env
+    matchers:
+      - type: word
+        words:
+          - '"activeProfiles"'
+          - '"propertySources"'
+        part: body
+        condition: or
+
+  - method: GET
+    path: /actuator/heapdump
+    matchers:
+      - type: status
+        status: [200]

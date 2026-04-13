@@ -1,0 +1,19 @@
+id: git-config-exposed
+name: Git Config File Exposed
+severity: high
+description: Detects publicly accessible .git/config files that may expose credentials and repo paths.
+reference:
+  - https://github.com/internetwache/GitTools
+tags: [git, exposure, credentials, high]
+
+requests:
+  - method: GET
+    path: /.git/config
+    matchers:
+      - type: word
+        words:
+          - "[core]"
+        part: body
+      - type: status
+        status: [200]
+    matcher-condition: and

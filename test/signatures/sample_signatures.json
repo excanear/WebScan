@@ -1,0 +1,11 @@
+[
+  {
+    "name": "ExampleApp",
+    "header_contains": {"Server": "ExampleServer"},
+    "body_contains": ["example marker"]
+  },
+  {
+    "name": "WordPress",
+    "body_contains": ["wp-content", "wp-includes"]
+  }
+]

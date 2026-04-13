@@ -1,0 +1,430 @@
+[
+  {
+    "name": "Akamai",
+    "header_contains": {
+      "Server": "AkamaiGHost"
+    }
+  },
+  {
+    "name": "Alibaba CDN",
+    "match_headers": {
+      "Server": "Tengine"
+    }
+  },
+  {
+    "name": "AmazonELB",
+    "header_contains": {
+      "Server": "awselb"
+    }
+  },
+  {
+    "name": "Apache",
+    "header_contains": {
+      "Server": "apache"
+    }
+  },
+  {
+    "name": "ASP.NET",
+    "match_headers": {
+      "X-Powered-By": "ASP.NET"
+    }
+  },
+  {
+    "name": "AWS CloudFront",
+    "match_headers": {
+      "Via": "CloudFront"
+    }
+  },
+  {
+    "name": "Azure CDN",
+    "match_headers": {
+      "X-Azure-Ref": ""
+    }
+  },
+  {
+    "name": "Baidu CDN",
+    "match_headers": {
+      "Server": "bfe"
+    }
+  },
+  {
+    "name": "Barracuda",
+    "header_contains": {
+      "Server": "Barracuda"
+    }
+  },
+  {
+    "name": "Barracuda WAF",
+    "match_headers": {
+      "Server": "BarracudaHTTP"
+    }
+  },
+  {
+    "name": "BIG-IP",
+    "header_contains": {
+      "Server": "BIG-IP"
+    }
+  },
+  {
+    "name": "Bunny CDN",
+    "match_headers": {
+      "Server": "BunnyCDN"
+    }
+  },
+  {
+    "name": "Caddy",
+    "header_contains": {
+      "Server": "caddy"
+    }
+  },
+  {
+    "name": "CDN77",
+    "header_contains": {
+      "Server": "CDN77"
+    }
+  },
+  {
+    "name": "Citrix NetScaler",
+    "match_headers": {
+      "Via": "NS-CACHE"
+    }
+  },
+  {
+    "name": "Cloudflare",
+    "header_contains": {
+      "Server": "cloudflare"
+    },
+    "body_contains": [
+      "checking your browser before accessing",
+      "please enable cookies"
+    ]
+  },
+  {
+    "name": "CloudFront",
+    "header_contains": {
+      "Server": "CloudFront",
+      "Via": "cloudfront"
+    }
+  },
+  {
+    "name": "Django",
+    "body_contains": [
+      "csrfmiddlewaretoken",
+      "csrftoken"
+    ]
+  },
+  {
+    "name": "Drupal",
+    "body_contains": [
+      "sites/default/files",
+      "drupal.settings"
+    ]
+  },
+  {
+    "name": "Express",
+    "header_contains": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "Express.js",
+    "match_headers": {
+      "X-Powered-By": "Express"
+    }
+  },
+  {
+    "name": "F5",
+    "header_contains": {
+      "Server": "BIG-IP"
+    },
+    "body_contains": [
+      "The requested URL was rejected"
+    ]
+  },
+  {
+    "name": "F5 BIG-IP",
+    "match_headers": {
+      "Server": "BigIP"
+    }
+  },
+  {
+    "name": "Fastly",
+    "header_contains": {
+      "X-Served-By": "fastly",
+      "X-Cache": "Fastly"
+    }
+  },
+  {
+    "name": "Fly.io",
+    "match_headers": {
+      "Fly-Request-Id": ""
+    }
+  },
+  {
+    "name": "GitHub Pages",
+    "header_contains": {
+      "Server": "github"
+    },
+    "body_contains": [
+      "github.io",
+      "pages.github.com"
+    ]
+  },
+  {
+    "name": "GlassFish",
+    "match_headers": {
+      "Server": "GlassFish"
+    }
+  },
+  {
+    "name": "Google Cloud CDN",
+    "match_headers": {
+      "Via": "google"
+    }
+  },
+  {
+    "name": "Gunicorn",
+    "match_headers": {
+      "Server": "gunicorn"
+    }
+  },
+  {
+    "name": "Heroku",
+    "header_contains": {
+      "Server": "cowboy"
+    }
+  },
+  {
+    "name": "IIS",
+    "header_contains": {
+      "Server": "microsoft-iis"
+    }
+  },
+  {
+    "name": "Imperva/Incapsula",
+    "match_headers": {
+      "X-CDN": "Incapsula"
+    }
+  },
+  {
+    "name": "Incapsula",
+    "header_contains": {
+      "Server": "Incapsula"
+    },
+    "body_contains": [
+      "incapsula"
+    ]
+  },
+  {
+    "name": "Jetty",
+    "match_headers": {
+      "Server": "Jetty"
+    }
+  },
+  {
+    "name": "Joomla",
+    "body_contains": [
+      "content=\"Joomla"
+    ]
+  },
+  {
+    "name": "KeyCDN",
+    "match_headers": {
+      "Server": "keycdn"
+    }
+  },
+  {
+    "name": "Lighttpd",
+    "match_headers": {
+      "Server": "lighttpd"
+    }
+  },
+  {
+    "name": "Limelight CDN",
+    "match_headers": {
+      "X-Pull": "Limelight"
+    }
+  },
+  {
+    "name": "ModSecurity",
+    "body_contains": [
+      "modsecurity",
+      "this request has been blocked"
+    ]
+  },
+  {
+    "name": "ModSecurity WAF",
+    "match_headers": {
+      "Server": "mod_security"
+    }
+  },
+  {
+    "name": "Netlify",
+    "header_contains": {
+      "Server": "netlify"
+    }
+  },
+  {
+    "name": "Nginx",
+    "header_contains": {
+      "Server": "nginx"
+    }
+  },
+  {
+    "name": "OpenResty",
+    "header_contains": {
+      "Server": "openresty"
+    }
+  },
+  {
+    "name": "Oracle Cloud",
+    "match_headers": {
+      "X-Frame-Options": ""
+    }
+  },
+  {
+    "name": "Palo Alto NGFW",
+    "match_headers": {
+      "X-Protected-By": ""
+    }
+  },
+  {
+    "name": "PHP",
+    "header_contains": {
+      "X-Powered-By": "PHP"
+    },
+    "body_contains": [
+      "php"
+    ]
+  },
+  {
+    "name": "Radware AppWall",
+    "match_headers": {
+      "X-SL-CompState": ""
+    }
+  },
+  {
+    "name": "Rails",
+    "body_contains": [
+      "csrf-token",
+      "csrf-param"
+    ]
+  },
+  {
+    "name": "Railway",
+    "match_headers": {
+      "X-Railway-Edge": ""
+    }
+  },
+  {
+    "name": "Render",
+    "match_headers": {
+      "X-Render-Origin-Server": ""
+    }
+  },
+  {
+    "name": "Resin",
+    "match_headers": {
+      "Server": "Resin"
+    }
+  },
+  {
+    "name": "Shopify",
+    "match_headers": {
+      "X-ShopId": ""
+    }
+  },
+  {
+    "name": "Squarespace",
+    "match_headers": {
+      "X-Served-By": "squarespace"
+    }
+  },
+  {
+    "name": "StackPath",
+    "header_contains": {
+      "Server": "StackPath"
+    }
+  },
+  {
+    "name": "Sucuri",
+    "body_contains": [
+      "sucuri",
+      "sucuri.net"
+    ],
+    "header_contains": {
+      "Server": "Sucuri"
+    }
+  },
+  {
+    "name": "Sucuri WAF",
+    "match_headers": {
+      "X-Sucuri-ID": ""
+    }
+  },
+  {
+    "name": "Tomcat",
+    "match_headers": {
+      "Server": "Apache-Coyote"
+    }
+  },
+  {
+    "name": "Tornado",
+    "match_headers": {
+      "Server": "TornadoServer"
+    }
+  },
+  {
+    "name": "Traefik",
+    "match_headers": {
+      "X-Request-Id": ""
+    }
+  },
+  {
+    "name": "uvicorn",
+    "match_headers": {
+      "Server": "uvicorn"
+    }
+  },
+  {
+    "name": "Varnish",
+    "header_contains": {
+      "Server": "varnish"
+    }
+  },
+  {
+    "name": "Vercel",
+    "header_contains": {
+      "Server": "Vercel",
+      "x-vercel-id": "vercel"
+    },
+    "body_contains": [
+      "vercel.app",
+      "powered by vercel"
+    ]
+  },
+  {
+    "name": "Wallarm WAF",
+    "match_headers": {
+      "X-Wallarm-Node": ""
+    }
+  },
+  {
+    "name": "WildFly",
+    "match_headers": {
+      "Server": "WildFly"
+    }
+  },
+  {
+    "name": "WooCommerce",
+    "match_body": "woocommerce"
+  },
+  {
+    "name": "WordPress",
+    "body_contains": [
+      "wp-content",
+      "wp-includes",
+      "wordpress"
+    ]
+  }
+]
