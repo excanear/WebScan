@@ -35,9 +35,16 @@ func Lookup(domain string, timeout time.Duration) (Result, error) {
 		return result, fmt.Errorf("iana whois: %w", err)
 	}
 
-	whoisServer := extractField(rawIANA, "whois")
+	// A resposta da IANA traz a linha "whois:" (ou "refer:") com o servidor
+	// autoritativo do TLD. Precisa procurar a LINHA certa — não basta dar split
+	// no primeiro ':' do blob inteiro.
+	whoisServer := findField(rawIANA, "whois")
+	if whoisServer == "" {
+		whoisServer = findField(rawIANA, "refer")
+	}
 	if whoisServer == "" {
 		result.Raw = rawIANA
+		result = parseFields(result, rawIANA)
 		return result, nil
 	}
 
@@ -107,6 +114,23 @@ func extractField(line, _ string) string {
 	parts := strings.SplitN(line, ":", 2)
 	if len(parts) == 2 {
 		return strings.TrimSpace(parts[1])
+	}
+	return ""
+}
+
+// findField procura, linha a linha, a primeira linha cujo rótulo (antes do ':')
+// seja exatamente `name` (case-insensitive) e devolve o valor após o ':'.
+func findField(raw, name string) string {
+	name = strings.ToLower(name)
+	for _, line := range strings.Split(raw, "\n") {
+		line = strings.TrimSpace(line)
+		idx := strings.Index(line, ":")
+		if idx <= 0 {
+			continue
+		}
+		if strings.ToLower(strings.TrimSpace(line[:idx])) == name {
+			return strings.TrimSpace(line[idx+1:])
+		}
 	}
 	return ""
 }

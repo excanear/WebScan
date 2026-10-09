@@ -8,11 +8,39 @@ import (
 	"strings"
 )
 
+// flexStrings aceita tanto uma string quanto um array de strings no JSON
+// (alguns arquivos de assinaturas usam "body" como string única).
+type flexStrings []string
+
+func (f *flexStrings) UnmarshalJSON(b []byte) error {
+	if len(b) == 0 {
+		return nil
+	}
+	if b[0] == '[' {
+		var arr []string
+		if err := json.Unmarshal(b, &arr); err != nil {
+			return err
+		}
+		*f = arr
+		return nil
+	}
+	var s string
+	if err := json.Unmarshal(b, &s); err != nil {
+		return err
+	}
+	*f = []string{s}
+	return nil
+}
+
 // Signature describes a simple fingerprint rule set loaded from JSON.
+// Aceita tanto header_contains/body_contains quanto os aliases
+// match_headers/match_body usados em alguns arquivos de assinaturas.
 type Signature struct {
 	Name           string            `json:"name"`
 	HeaderContains map[string]string `json:"header_contains,omitempty"`
-	BodyContains   []string          `json:"body_contains,omitempty"`
+	BodyContains   flexStrings       `json:"body_contains,omitempty"`
+	MatchHeaders   map[string]string `json:"match_headers,omitempty"`
+	MatchBody      flexStrings       `json:"match_body,omitempty"`
 }
 
 var signatureDB []Signature = []Signature{
@@ -67,10 +95,34 @@ func MatchSignatures(headers http.Header, body []byte) []string {
 	var found []string
 	bstr := strings.ToLower(string(body))
 	for _, sig := range signatureDB {
+		// combina os campos canônicos com os aliases match_headers/match_body
+		hdrChecks := map[string]string{}
+		for k, v := range sig.HeaderContains {
+			hdrChecks[k] = v
+		}
+		for k, v := range sig.MatchHeaders {
+			hdrChecks[k] = v
+		}
+		bodyChecks := append(append([]string{}, sig.BodyContains...), sig.MatchBody...)
+
+		// uma assinatura sem NENHUM critério não deve casar (evita falso-positivo
+		// quando o JSON usa uma chave desconhecida e os campos ficam vazios).
+		if len(hdrChecks) == 0 && len(bodyChecks) == 0 {
+			continue
+		}
+
 		ok := true
-		// header checks
-		for hk, hv := range sig.HeaderContains {
-			if strings.Contains(strings.ToLower(headers.Get(hk)), strings.ToLower(hv)) == false {
+		for hk, hv := range hdrChecks {
+			if hv == "" {
+				// valor vazio = critério de PRESENÇA: o header precisa existir
+				// (senão strings.Contains(x, "") casaria com qualquer resposta).
+				if len(headers.Values(hk)) == 0 {
+					ok = false
+					break
+				}
+				continue
+			}
+			if !strings.Contains(strings.ToLower(headers.Get(hk)), strings.ToLower(hv)) {
 				ok = false
 				break
 			}
@@ -78,8 +130,7 @@ func MatchSignatures(headers http.Header, body []byte) []string {
 		if !ok {
 			continue
 		}
-		// body checks
-		for _, bc := range sig.BodyContains {
+		for _, bc := range bodyChecks {
 			if !strings.Contains(bstr, strings.ToLower(bc)) {
 				ok = false
 				break
